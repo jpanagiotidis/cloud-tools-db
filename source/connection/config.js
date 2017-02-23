@@ -12,7 +12,7 @@ const config = {
   USER: env('RDS_USERNAME'),
   PASSWORD: env('RDS_PASSWORD'),
   DB_NAME: env('RDS_DB_NAME'),
-  DEBUG: bool('RDS_DEBUG'),
+  DEBUG: bool('RDS_DEBUG', false),
   TIMEOUT: env('RDS_ACQUIRE_CONNECTION_TIMEOUT', 10000),
   LOCAL_INFILE: true,
   POOL_MIN: env('RDS_POOL_MIN', 0),
